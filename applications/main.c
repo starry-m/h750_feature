@@ -23,7 +23,7 @@ int main(void)
 {
     int count = 1;
     static int pin_num1;
-    rt_kprintf("HERE IS APP RUNNING ! V1.0.1\r\n");
+    rt_kprintf("HERE IS APP RUNNING ! V1.1.2\r\n");
     /* 设置PIN脚模式为输出 */
     pin_num1 = LED_R;
     rt_pin_mode(pin_num1, PIN_MODE_OUTPUT);

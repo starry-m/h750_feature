@@ -1,0 +1,25 @@
+Import('RTT_ROOT')
+Import('rtconfig')
+from building import *
+import os
+
+cwd = GetCurrentDir()
+group = []
+# src = ['*.c']
+src     = Glob('*.c')
+# path = [cwd]
+
+# if not GetDepend('PKG_USING_CMSIS_CORE'):
+#     path += [os.path.join(cwd, 'CMSIS', 'include', 'include/config')]
+path = [cwd,
+        cwd  + '/include',
+        cwd + '/include/config']
+
+# if GetDepend(['RT_USING_NANO']):
+#     group = group + SConscript(os.path.join(cwd, 'nano', 'SConscript'))
+# else:
+#     group = group + SConscript(os.path.join(cwd, 'drivers', 'SConscript'))
+
+group = group + DefineGroup('Drivers', src, depend = [''], CPPPATH = path)
+
+Return('group')

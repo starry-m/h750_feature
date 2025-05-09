@@ -57,7 +57,7 @@
 #define ARCH_ARM
 #define ARCH_ARM_CORTEX_M
 #define ARCH_ARM_CORTEX_M7
-
+#define SOC_SERIES_STM32H7
 /* RT-Thread Components */
 
 #define RT_USING_COMPONENTS_INIT

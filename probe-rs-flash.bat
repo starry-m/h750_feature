@@ -1,0 +1,2 @@
+probe-rs download --chip=stm32h750vbtx --protocol swd --chip-description-path stldr\STM32H7_Series.yaml --speed=46000 rt-thread.elf
+probe-rs reset --chip=stm32h750vbtx --protocol swd --chip-description-path  stldr\STM32H7_Series.yaml
