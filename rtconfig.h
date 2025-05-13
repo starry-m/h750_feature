@@ -55,7 +55,7 @@
 #define ARCH_ARM
 #define ARCH_ARM_CORTEX_M
 #define ARCH_ARM_CORTEX_M7
-
+#define SOC_SERIES_STM32H7
 /* RT-Thread Components */
 
 #define RT_USING_COMPONENTS_INIT
@@ -330,6 +330,13 @@
 /* Micrium: Micrium software products porting for RT-Thread */
 
 /* end of Micrium: Micrium software products porting for RT-Thread */
+#define PKG_USING_CHERRYUSB
+#define PKG_CHERRYUSB_DEVICE
+#define PKG_CHERRYUSB_DEVICE_HS
+#define PKG_CHERRYUSB_DEVICE_DWC2_ST
+#define PKG_CHERRYUSB_DEVICE_CDC_ACM
+#define PKG_CHERRYUSB_DEVICE_TEMPLATE_CDC_ACM
+#define PKG_USING_CHERRYUSB_V010300
 /* end of system packages */
 
 /* peripheral libraries and drivers */

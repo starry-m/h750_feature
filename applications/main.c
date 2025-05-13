@@ -27,10 +27,13 @@ int main(void)
     /* 设置PIN脚模式为输出 */
     pin_num1 = LED_R;
     rt_pin_mode(pin_num1, PIN_MODE_OUTPUT);
-    /* init Wi-Fi auto connect feature */
-    wlan_autoconnect_init();
-    /* enable auto reconnect on WLAN device */
-    rt_wlan_config_autoreconnect(RT_TRUE);
+    // /* init Wi-Fi auto connect feature */
+    // wlan_autoconnect_init();
+    // /* enable auto reconnect on WLAN device */
+    // rt_wlan_config_autoreconnect(RT_TRUE);
+
+
+    extern void cdc_acm_data_send_with_dtr_test(uint8_t busid);
     while (count++)
     {
 //        LOG_D("Hello RT-Thread!");
@@ -38,6 +41,7 @@ int main(void)
         rt_thread_mdelay(100);
         rt_pin_write(pin_num1, PIN_HIGH);
         rt_thread_mdelay(100);
+        cdc_acm_data_send_with_dtr_test(0);
     }
 
     return RT_EOK;

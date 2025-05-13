@@ -1,12 +1,17 @@
 [
  {
-  "path": "/packages/iot/WiFi/rw007", 
-  "ver": "v2.1.0", 
-  "name": "RW007"
- }, 
+  "name": "RW007",
+  "path": "/packages/iot/WiFi/rw007",
+  "ver": "v2.1.0"
+ },
  {
-  "path": "/packages/tools/EasyFlash", 
-  "ver": "v4.1.0", 
-  "name": "EASYFLASH"
+  "name": "EASYFLASH",
+  "path": "/packages/tools/EasyFlash",
+  "ver": "v4.1.0"
+ },
+ {
+  "name": "CHERRYUSB",
+  "path": "/packages/system/CherryUSB",
+  "ver": "v1.3.0"
  }
 ]

@@ -11,8 +11,15 @@ RAM (rw) : ORIGIN =0x24000000,LENGTH =512k
 ENTRY(Reset_Handler)
 _system_stack_size = 0x400;
 
+
 SECTIONS
 {
+    /* ._nocache_ram :
+    {
+    . = ALIGN(4);
+    *(.noncacheable)
+    } >RAM_nocache */
+
     .text :
     {
         . = ALIGN(4);
